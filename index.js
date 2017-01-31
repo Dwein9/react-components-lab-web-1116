@@ -1,17 +1,4 @@
-// class OlderCoaster extends React.Component {
-//   render() {
-//     return React.createElement('div', { className: 'oldercoaster' }, [
-//       React.createElement('p', {}, 'Two grannies having the time of their life!'),
-//       React.createElement('p', {}, 'Passengers:'),
-//       React.createElement('ul', {}, [
-//       React.createElement('li', {}, 'Agnes'),
-//       React.createElement('li', {}, 'Muriel'),
-//     ])
-//   ])
-//   }
-// }
-
-const OlderCoaster = React.createClass({
+class OlderCoaster extends React.Component {
   render() {
     return React.createElement('div', { className: 'oldercoaster' }, [
       React.createElement('p', {}, 'Two grannies having the time of their life!'),
@@ -22,7 +9,20 @@ const OlderCoaster = React.createClass({
     ])
   ])
   }
-})
+ }
+//
+// const OlderCoaster = React.createClass({
+//   render() {
+//     return React.createElement('div', { className: 'oldercoaster' }, [
+//       React.createElement('p', {}, 'Two grannies having the time of their life!'),
+//       React.createElement('p', {}, 'Passengers:'),
+//       React.createElement('ul', {}, [
+//       React.createElement('li', {}, 'Agnes'),
+//       React.createElement('li', {}, 'Muriel'),
+//     ])
+//   ])
+//   }
+// })
 
 class InFrontOfYou extends React.Component {
   render() {
@@ -42,7 +42,7 @@ const BUTCHER_PRODUCTS = [
   'Ribeye'
 ];
 
-const ButcherShop = React.createClass({
+class ButcherShop extends React.Component {
   render() {
     return React.createElement('div', {className: 'butcher-shop'}, [
       React.createElement('p', {}, "Hello! We have the following products for sale today:"),
@@ -51,7 +51,7 @@ const ButcherShop = React.createClass({
       ])
     ])
   }
-});
+};
 
 ReactDOM.render(
   React.createElement('div', {}, [
